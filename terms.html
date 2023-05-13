@@ -2,228 +2,417 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>bulliesgenesis 🦴</title>
-  <meta
-    content="Bullies Genesis is the first NFT collection curated by Early Birds Collective. 10,000 utility-packed 3D cartoon dogs coming to life on the Ethereum blockchain."
-    name="description">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="terms.css">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&family=Changa+One:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
-    rel="stylesheet">
-  <link href="https://www.bulliesgenesis.com/images/bullie_bone_spin_v01_alpha.gif" rel="shortcut icon"
-    type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulliesgenesis 🦴</title>
+    <meta
+        content="Bullies Genesis is the first NFT collection curated by Early Birds Collective. 10,000 utility-packed 3D cartoon dogs coming to life on the Ethereum blockchain."
+        name="description">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&family=Changa+One:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link href="https://www.bulliesgenesis.com/images/bullie_bone_spin_v01_alpha.gif" rel="shortcut icon"
+        type="image/x-icon">
 </head>
 
-<body class="text-white">
+<body style="min-height: 100vh; background-color:#100f10;">
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/all.min.js"></script>
 
   <!-- start video-->
-  <video autoplay muted loop id="backgroundvideo">
+  <video autoplay muted loop id="backgroundvideo" class=" position-fixed "
+    style=" width: 100%; height: 100vh; object-fit:cover; opacity:0.3;">
     <source src="videos/bullies_backyard_banner_ani_v01_grayfade_v03-transcode.mp4" type="video/mp4">
   </video>
   <!-- End video-->
 
   <!-- start navbar-->
-  <nav class="navbar navbar-expand-md ">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid mt-4 ms-3 mb-0">
 
-      <a class="navbar-brand" href="index.html">
-        <img class="logo" src="images/bullie_bone_spin_v01_alpha.gif" style="width: 75px;">
-      </a>
+        <a class="navbar-brand" href="index.html">
+            <img class="logo" src="images/bullie_bone_spin_v01_alpha.gif" style="width: 75px;">
+        </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars"></i>
-      </button>
+        <button class="navbar-toggler fs-3 text-white" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
-      <div class="collapse navbar-collapse ul-bg" id="navbarNav">
-        <ul class="navbar-nav">
+        <div class="collapse navbar-collapse ul-bg" id="navbarNav">
+            <ul class="navbar-nav"
+                style="background-color: transparent; text-shadow: 1px 1px 3px #000; font-family:'Merriweather', serif; letter-spacing: 1px;">
 
-          <li class="nav-item">
-            <a class="nav-link" style="padding: 30px 10px;" href="buybullies.html">BUY BULLIES</a>
-          </li>
+                <li class="nav-item ">
+                    <a class="nav-link d-inline-block fw-bold text-white position-relative"
+                        style="padding: 30px 10px;font-size:15px;" href="buybullies.html">BUY BULLIES
+                    </a>
+                </li>
 
-          <li class="nav-item">
-            <a class="nav-link" style="padding: 30px 10px;" href="#">ROADMAP</a>
-          </li>
+                <li class="nav-item">
+                    <a class="nav-link d-inline-block fw-bold text-white position-relative"
+                        style="padding: 30px 10px;font-size:15px;" href="roadmap.html">ROADMAP
+                    </a>
+                </li>
 
-          <li class="nav-item">
-            <a class="nav-link" style="padding: 30px 10px;" href="team.html">TEAM</a>
-          </li>
+                <li class="nav-item">
+                    <a class="nav-link d-inline-block fw-bold text-white position-relative"
+                        style="padding: 30px 10px;font-size: 15px;" href="team.html">TEAM
+                    </a>
+                </li>
 
-          <li class="nav-item">
-            <a class="nav-link" style="padding: 30px 10px;" href="utilities.html">UTILITIES</a>
-          </li>
+                <li class="nav-item">
+                    <a class="nav-link d-inline-block fw-bold text-white position-relative"
+                        style="padding: 30px 10px;font-size:15px;" href="utilities.html">UTILITIES
+                    </a>
+                </li>
 
-          <li class="nav-item">
-            <a class="nav-link" style="padding: 30px 10px;" href="#">$BONES MART</a>
-          </li>
+                <li class="nav-item">
+                    <a class="nav-link d-inline-block fw-bold text-white position-relative"
+                        style="padding: 30px 10px;font-size:15px;" href="bones-mart.html">$BONES MART
+                    </a>
+                </li>
 
-          <li class="nav-item">
-            <a class="nav-link" style="padding: 30px 10px;" href="#">DOG HOUSE</a>
-          </li>
+                <li class="nav-item">
+                    <a class="nav-link d-inline-block fw-bold text-white position-relative"
+                        style="padding: 30px 10px;font-size: 15px;" href="dog_house.html">DOG HOUSE
+                    </a>
+                </li>
 
-          <li class="nav-item">
-            <a class="nav-link" style="padding: 30px 10px;" href="#">BONES CHECKER</a>
-          </li>
+                <li class="nav-item">
+                    <a class="nav-link d-inline-block fw-bold text-white position-relative"
+                        style="padding: 30px 10px;font-size: 15px;" href="boneschecker.html">BONES CHECKER
+                    </a>
+                </li>
 
-        </ul>
+                <li class="nav-item">
+                    <a class="nav-link d-inline-block fw-bold text-white position-relative"
+                        style="padding: 30px 10px;font-size: 15px;" href="purchase_history.html">PURCHASE HISTORY
+                    </a>
+                </li>
 
-        <div class="navbar-nav ms-auto">
-          <div class="row">
-            <div class="d-flex">
+            </ul>
+
+            <div class="navbar-nav ms-auto">
+                <div class="row">
+                    <div class="d-flex">
 
 
-              <a class="text-reset m-auto me-auto" href="https://opensea.io/collection/bullies-genesis" target="_blank"
-                rel="noopener noreferrer" style="padding:20px 10px;">
-                <img style="width: 30px;" src="images/9255429_opensea_logo_icon.png">
-              </a>
+                        <a class="text-reset m-auto me-auto" href="https://opensea.io/collection/bullies-genesis"
+                            target="_blank" rel="noopener noreferrer" style="padding:20px 10px;">
+                            <img style="width: 30px;" src="images/9255429_opensea_logo_icon.png">
+                        </a>
 
-              <a class="text-reset m-auto me-auto" href="https://twitter.com/bulliesgenesis" target="_blank"
-                rel="noopener noreferrer" style="padding:20px 10px;">
-                <img style="width: 30px;" src="images/104501_twitter_bird_icon.png">
-              </a>
+                        <a class="text-reset m-auto me-auto" href="https://twitter.com/bulliesgenesis"
+                            target="_blank" rel="noopener noreferrer" style="padding:20px 10px;">
+                            <img style="width: 30px;" src="images/104501_twitter_bird_icon.png">
+                        </a>
 
-              <a class="text-reset m-auto me-auto " target="_blank" rel="noopener noreferrer"
-                href="https://discord.com/invite/bullies" style="padding:20px 10px;">
-                <img style="width: 30px;" src="images/8546766_discord_icon.png">
-              </a>
+                        <a class="text-reset m-auto me-auto " target="_blank" rel="noopener noreferrer"
+                            href="https://discord.com/invite/bullies" style="padding:20px 10px;">
+                            <img style="width: 30px;" src="images/8546766_discord_icon.png">
+                        </a>
 
-              <a class="text-reset m-auto me-auto" target="_blank" rel="noopener noreferrer"
-                href="https://etherscan.io/address/0x19369905226f2d37562370a05a711c1de4c9593c"
-                style="padding:20px 10px;">
-                <img style="width: 30px;" src="images/etherscan-logo.png">
-              </a>
+                        <a class="text-reset m-auto me-auto" target="_blank" rel="noopener noreferrer"
+                            href="https://etherscan.io/address/0x19369905226f2d37562370a05a711c1de4c9593c"
+                            style="padding:20px 10px;">
+                            <img style="width: 30px;" src="images/etherscan-logo.png">
+                        </a>
+
+                    </div>
+                </div>
 
             </div>
-          </div>
 
         </div>
-
-      </div>
     </div>
   </nav>
   <!-- End navbar-->
 
-  <!-- start landing-->
-  <div class="landing justify-content-center">
-    <div class="row justify-content-center pt-4">
-      <div class="container justify-content-center">
-        <div class=" col justify-content-center" style="text-align: center;">
-          <div class="col-12 col-md-10 col-lg-7 m-lg-2" style="text-align: left;" id="main">
+    <!-- start landing-->
+    <div class="landing mt-5 pt-4 text-white">
 
-            <h2 id="title" class="fw-bold fs-4">Terms and Conditions</h2>
-            <p id="paragraph" class="team-text-white fs-5 pt-3 pb-4 mb-2">
-              Bullies Genesis is a collection of digital artworks (NFTs) running on the Ethereum network. Users are entirely responsible for the safety and management of their own private Ethereum wallets and validating all transactions and contracts generated by this website before approval. Furthermore, as the Bullies Genesis smart contract runs on the Ethereum network, there is no ability to undo, reverse, or restore any transactions.<br>
-             <br>
-             This website and its connected services are provided “as is” and “as available” without warranty of any kind. By using this website you are accepting sole responsibility for any and all transactions involving Bullies Genesis digital collectibles.
-            </p>
-
-            <h2 id="title" class="fw-bold fs-4">Your Obligations</h2>
-            <p id="paragraph" class="team-text-white fs-5 pt-3 pb-4 mb-2">
-              You are solely responsible for your own conduct while accessing or using the Site, and for any consequences thereof. You agree to use the Site only for purposes that are legal, proper and in accordance with these Terms and any applicable laws or regulations. By way of example, and not as a limitation, you may not, and may not allow any third party to: (i) send, upload, distribute or disseminate any unlawful, defamatory, harassing, abusive, fraudulent, hateful, violent, obscene, or otherwise objectionable content; (ii) distribute viruses, worms, defects, Trojan horses, corrupted files, hoaxes, or any other items of a destructive or deceptive nature; (iii) impersonate another person; (iv) upload, post, transmit or otherwise make available through the Site any content that infringes the intellectual property or proprietary rights of any party or otherwise violates the legal rights of others; (v) engage in, promote, or encourage illegal activity (including, without limitation, money laundering); (vi) interfere with other users' use of the Site; (vii) use the Site for any unauthorized commercial purpose; (viii) modify, adapt, translate, or reverse engineer any portion of the Site; (ix) remove any copyright, trademark or other proprietary rights notices contained in or on the Site or any part of it; (x) use any technology to collect information about the Site’s for any unauthorized purpose; (xi) access or use the Site for the purpose of creating a product or service that is competitive with any of our products or services. If you engage in any of the activities prohibited by this Section, we may, at our sole and absolute discretion, without notice to you, and without limiting any of our other rights or remedies at law or in equity, immediately suspend or terminate your user account.<br>
-            </p>
-
-            <h2 id="title" class="fw-bold fs-4">Fees and Payment</h2>
-            <p id="paragraph" class="team-text-white fs-5 pt-3 pb-4 mb-2">
-              A. If you elect to purchase a Bullies Genesis NFT through the Site, any financial transactions that you engage in will be conducted solely through the Ethereum network. We will have no insight into or control over these payments or transactions, nor do we have the ability to reverse any transactions.  We will have no liability to you or to any third party for any claims or damages that may arise as a result of any transactions that you engage or any other transactions that you conduct via the Ethereum network.<br>
-             <br>
-             B. Ethereum requires the payment of a transaction fee (a “Gas Fee”) for every transaction that occurs on the Ethereum network. The Gas Fee funds the network of computers that run the decentralized Ethereum network. This means that you will need to pay a Gas Fee for each transaction.
-            </p>
-
-            <h2 id="title" class="fw-bold fs-4">Disclaimers</h2>
-            <p id="paragraph" class="team-text-white fs-6 pt-3 pb-4 mb-2">
-             A. YOU EXPRESSLY UNDERSTAND AND AGREE THAT YOUR ACCESS TO AND USE OF THE SITE IS AT YOUR SOLE RISK, AND THAT THE SITE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMISSIBLE PURSUANT TO APPLICABLE LAW, WE MAKE NO EXPRESS WARRANTIES AND HEREBY DISCLAIM ALL IMPLIED WARRANTIES REGARDING THE SITE AND ANY PART OF IT (INCLUDING, WITHOUT LIMITATION, THE SITE, ANY SMART CONTRACT, OR ANY EXTERNAL WEBSITES), INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, CORRECTNESS, ACCURACY, OR RELIABILITY. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, WE, OUR SUBSIDIARIES, AFFILIATES, AND LICENSORS DO NOT REPRESENT OR WARRANT TO YOU THAT: (I) YOUR ACCESS TO OR USE OF THE SITE WILL MEET YOUR REQUIREMENTS, (II) YOUR ACCESS TO OR USE OF THE SITE WILL BE UNINTERRUPTED, TIMELY, SECURE OR FREE FROM ERROR, (III) USAGE DATA PROVIDED THROUGH THE SITE WILL BE ACCURATE, (III) THE SITE OR ANY CONTENT, SERVICES, OR FEATURES MADE AVAILABLE ON OR THROUGH THE SITE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS, OR (IV) THAT ANY DATA THAT YOU DISCLOSE WHEN YOU USE THE SITE WILL BE SECURE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES IN CONTRACTS WITH CONSUMERS, SO SOME OR ALL OF THE ABOVE EXCLUSIONS MAY NOT APPLY TO YOU.<br>
-             <br>
-             B. YOU ACCEPT THE INHERENT SECURITY RISKS OF PROVIDING INFORMATION AND DEALING ONLINE OVER THE INTERNET, AND AGREE THAT WE HAVE NO LIABILITY OR RESPONSIBILITY FOR ANY BREACH OF SECURITY UNLESS IT IS DUE TO OUR WILLFULL MISCONDUCT.<br>
-             <br>
-             C. WE WILL NOT BE RESPONSIBLE OR LIABLE TO YOU FOR ANY LOSSES YOU INCUR AS THE RESULT OF YOUR USE OF THE ETHEREUM NETWORK NOR DO WE HAVE NO CONTROL OVER AND MAKE NO GUARANTEES REGARDING ANY SMART CONTRACTS.
-            </p>
-
-            <h2 id="title" class="fw-bold fs-4">Limitation of Liability</h2>
-            <p id="paragraph" class="team-text-white fs-6 pt-3 pb-4 mb-2">
-             A. YOU UNDERSTAND AND AGREE THAT WE WILL NOT BE LIABLE TO YOU OR TO ANY THIRD PARTY FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES WHICH YOU MAY INCUR, HOWSOEVER CAUSED AND UNDER ANY THEORY OF LIABILITY, INCLUDING, WITHOUT LIMITATION, ANY LOSS OF PROFITS (WHETHER INCURRED DIRECTLY OR INDIRECTLY), LOSS OF GOODWILL OR BUSINESS REPUTATION, LOSS OF DATA, COST OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, OR ANY OTHER INTANGIBLE LOSS, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.<br>
-             <br>
-             B. YOU AGREE THAT OUR TOTAL, AGGREGATE LIABILITY TO YOU FOR ANY AND ALL CLAIMS ARISING OUT OF OR RELATING TO THESE TERMS OR YOUR ACCESS TO OR USE OF (OR YOUR INABILITY TO ACCESS OR USE) ANY PORTION OF THE SITE, WHETHER IN CONTRACT, TORT, STRICT LIABILITY, OR ANY OTHER LEGAL THEORY, IS LIMITED TO THE GREATER OF (A) THE AMOUNTS YOU ACTUALLY PAID US UNDER THESE TERMS IN THE 12 MONTH PERIOD PRECEDING THE DATE THE CLAIM AROSE, OR (B) $500.<br>
-             <br>
-             C. YOU ACKNOWLEDGE AND AGREE THAT WE HAVE MADE THE SITE AVAILABLE TO YOU AND ENTERED INTO THESE TERMS IN RELIANCE UPON THE WARRANTY DISCLAIMERS AND LIMITATIONS OF LIABILITY SET FORTH HEREIN. WE WOULD NOT BE ABLE TO PROVIDE THE SITE TO YOU WITHOUT THESE LIMITATIONS.
-            </p>
-
-            <h2 id="title" class="fw-bold fs-4">Risk Assumption</h2>
-            <p id="paragraph" class="team-text-white fs-5 pt-3 pb-4 mb-2">
-              You accept and acknowledge each of the following:<br>
-             <br>
-             A. To the extent that you sell your Bullies Genesis NFT, please be aware that the prices of NFTs are extremely volatile and fluctuations in the prices of other NFTs and impact the price of your Bullies Genesis NFT both positively and negatively.  Given the volatility, NFTs such as Bullies Genesis NFTs should not be considered an investment. You assume all risks in that connection.<br>
-             <br>
-             B. Ownership of a Bullies Genesis NFT confers ownership of digital artwork only. Accordingly, no information on this Site (or any other documents mentioned therein) is or may be considered to be advice or an invitation to enter into an agreement for any investment purpose. Further, nothing on this Site qualifies or is intended to be an offering of securities in any jurisdiction nor does it constitute an offer or an invitation to purchase shares, securities or other financial products.  Due to the artistic nature of the project, Bullies Genesis has not been registered with or approved by any regulator in any jurisdiction. It remains your sole responsibility to assure that the purchase of the Bullies Genesis NFT and the associated art is in compliance with laws and regulations in your jurisdiction.<br>
-             <br>
-             C. You assume all risks associated with using an Internet-based currency, including, but not limited to, the risk of hardware, software and Internet connections, the risk of malicious software introduction, and the risk that third parties may obtain unauthorized access to information stored within your wallet.<br>
-             <br>
-             D. NFTs, cryptocurrencies and blockchain technology are relatively new and the regulatory landscape is unsettled.  New regulations could negatively impact such technologies impacting the value for your Bullies Genesis NFT. You understand and accept all risk in that regard.<br>
-             <br>
-             E. You assume all responsibility for any adverse effects of disruptions or other issues impacting Ethereum or the Ethereum platform.
-            </p>
-
-            <h2 id="title" class="fw-bold fs-4">Indemnification</h2>
-            <p id="paragraph" class="team-text-white fs-5 pt-3 pb-4 mb-2">
-              You agree to hold harmless and indemnify Bullies Genesis and its subsidiaries, affiliates, officers, agents, employees, advertisers, licensors, suppliers or partners from and against any claim, liability, loss, damage (actual and consequential) of any kind or nature, suit, judgment, litigation cost, and reasonable attorneys' fees arising out of or in any way related to (i) your breach of these Terms, (ii) your misuse of the Site, or (iii) your violation of applicable laws, rules or regulations in connection with your access to or use of the Site.
-            </p>
-
-            <h2 id="title" class="fw-bold fs-4">Changes to the Terms and Conditions</h2>
-            <p id="paragraph" class="team-text-white fs-5 pt-3 pb-4 mb-2">
-              We may make changes to the Terms at our discretion. Please check these Terms periodically for changes. Any changes to the Terms will apply on the date that they are made, and your continued access to or use after the Terms have been updated will constitute your binding acceptance of the updates. If you do not agree to any revised Terms, you may not access or use the Site.
-            </p>
-
-            <h2 id="title" class="fw-bold fs-4">Children</h2>
-            <p id="paragraph" class="team-text-white fs-5 pt-3 pb-4 mb-2">
-              Our Site is not intended for children.  You must be at least 18 years old to access this Site or purchase a Bullies Genesis NFT. If you are under 18 years old you are not permitted to use this Site for any reason. By accessing the Site, you represent and warrant that you are at least 18 years of age.
-            </p>
-
-            <h2 id="title" class="fw-bold fs-4">Dispute Resolution; Arbitration</h2>
-            <p id="paragraph" class="team-text-white fs-5 pt-3 pb-4 mb-2">
-              All disputes arising out of or in connection with these Terms, including without limitation your access or use of the Site, or to any products sold or distributed through the Site, will be referred to and finally resolved by arbitration under the rules of the American Arbitration Association. The case will be adjudicated by a single arbitrator and will be administered by the American Arbitration Association in accordance with its applicable rules. Each party will cover its own fees and costs associated with the arbitration proceedings. The place of arbitration will be New York, New York. The award of the arbitrator will be final and binding, and any judgment on the award rendered by the arbitrator may be entered in any court of competent jurisdiction. Notwithstanding the foregoing, we may seek and obtain injunctive relief in any jurisdiction in any court of competent jurisdiction.<br>
-             <br>
-             <span class="fs-6">WITH RESPECT TO ANY DISPUTE ARISING OUT OF OR RELATED TO THESE TERMS, INCLUDING WITHOUT LIMITATION DISPUTES RELATED TO THE SITE OR ANY PRODUCTS SOLD OR DISTRIBUTED THROUGH THE SITE, OR THE SMART CONTRACTS: (I) YOU HEREBY EXPRESSLY GIVE UP YOUR RIGHT TO HAVE A TRIAL BY JURY; AND (II) YOU HEREBY EXPRESSLY GIVE UP YOUR RIGHT TO PARTICIPATE AS A MEMBER OF A CLASS OF CLAIMANTS IN ANY LAWSUIT, INCLUDING BUT NOT LIMITED TO CLASS ACTION LAWSUITS INVOLVING ANY SUCH DISPUTE.</span>
-            </p>
-
-          </div>
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <h2 style="font-family: 'Bitter', serif;" class="fw-bold fs-4">Terms and Conditions</h2>
+            </div>
         </div>
-      </div>
-  </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-8 col-lg-8 text-center m-lg-2">
+                <p class="fs-5 pt-3 pb-4 mb-2" style=" text-align: left;">
+                    Bullies Genesis is a collection of digital artworks (NFTs) running on the Ethereum network. Users are
+                    entirely responsible for the safety and management of their own private Ethereum wallets and validating
+                    all transactions and contracts generated by this website before approval. Furthermore, as the Bullies
+                    Genesis smart contract runs on the Ethereum network, there is no ability to undo, reverse, or restore any
+                    transactions.<br>
+                    <br>
+                    This website and its connected services are provided “as is” and “as available” without warranty of any
+                    kind. By using this website you are accepting sole responsibility for any and all transactions involving
+                    Bullies Genesis digital collectibles.
+                </p>
+            </div>
+        </div>
 
-  <!-- end landing-->
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <h2 style="font-family: 'Bitter', serif;" class="fw-bold fs-4">Your Obligations</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-8 col-lg-8 text-center m-lg-2">
+                <p style=" text-align: left;" class="fs-5 pt-3 pb-4 mb-2">
+                    You are solely responsible for your own conduct while accessing or using the Site, and for any
+                    consequences thereof. You agree to use the Site only for purposes that are legal, proper and in accordance
+                    with these Terms and any applicable laws or regulations. By way of example, and not as a limitation, you
+                    may not, and may not allow any third party to: (i) send, upload, distribute or disseminate any unlawful,
+                    defamatory, harassing, abusive, fraudulent, hateful, violent, obscene, or otherwise objectionable content;
+                    (ii) distribute viruses, worms, defects, Trojan horses, corrupted files, hoaxes, or any other items of a
+                    destructive or deceptive nature; (iii) impersonate another person; (iv) upload, post, transmit or
+                    otherwise make available through the Site any content that infringes the intellectual property or
+                    proprietary rights of any party or otherwise violates the legal rights of others; (v) engage in, promote,
+                    or encourage illegal activity (including, without limitation, money laundering); (vi) interfere with other
+                    users' use of the Site; (vii) use the Site for any unauthorized commercial purpose; (viii) modify, adapt,
+                    translate, or reverse engineer any portion of the Site; (ix) remove any copyright, trademark or other
+                    proprietary rights notices contained in or on the Site or any part of it; (x) use any technology to
+                    collect information about the Site’s for any unauthorized purpose; (xi) access or use the Site for the
+                    purpose of creating a product or service that is competitive with any of our products or services. If you
+                    engage in any of the activities prohibited by this Section, we may, at our sole and absolute discretion,
+                    without notice to you, and without limiting any of our other rights or remedies at law or in equity,
+                    immediately suspend or terminate your user account.<br>
+                  </p>
+            </div>
+        </div>
 
-  <!-- start footer-->
-  <footer>
-    <div class="container text-light text-center">
-      <a class=" text-decoration-none ms-3 " href="buybullies.html">Buy Bullies</a>
-      <a class=" text-decoration-none ms-3 " href="#">Roadmap</a>
-      <a class=" text-decoration-none ms-3 " href="team.html">Team</a>
-      <a class=" text-decoration-none ms-3 " href="utilities.html">Utilities</a>
-      <a class=" text-decoration-none ms-3 " href="#">Bones Mart</a>
-      <a class=" text-decoration-none ms-3 " href="#">Dog House</a>
-      <a class=" text-decoration-none ms-3 " href="#">Bones Checker</a>
-      <a class=" text-decoration-none ms-3 " href="#">Terms</a><br>
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <h2 style="font-family: 'Bitter', serif;" class="fw-bold fs-4">Fees and Payment</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-8 col-lg-8 text-center m-lg-2">
+                <p style=" text-align: left;" class="fs-5 pt-3 pb-4 mb-2">
+                    A. If you elect to purchase a Bullies Genesis NFT through the Site, any financial transactions that you
+                    engage in will be conducted solely through the Ethereum network. We will have no insight into or control
+                    over these payments or transactions, nor do we have the ability to reverse any transactions. We will have
+                    no liability to you or to any third party for any claims or damages that may arise as a result of any
+                    transactions that you engage or any other transactions that you conduct via the Ethereum network.<br>
+                    <br>
+                    B. Ethereum requires the payment of a transaction fee (a “Gas Fee”) for every transaction that occurs on
+                    the Ethereum network. The Gas Fee funds the network of computers that run the decentralized Ethereum
+                    network. This means that you will need to pay a Gas Fee for each transaction.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <h2 style="font-family: 'Bitter', serif;" class="fw-bold fs-4">Disclaimers</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-8 col-lg-8 text-center m-lg-2">
+                <p style=" text-align: left;" class="fs-6 pt-3 pb-4 mb-2">
+                    A. YOU EXPRESSLY UNDERSTAND AND AGREE THAT YOUR ACCESS TO AND USE OF THE SITE IS AT YOUR SOLE RISK, AND
+                    THAT THE SITE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR
+                    IMPLIED. TO THE FULLEST EXTENT PERMISSIBLE PURSUANT TO APPLICABLE LAW, WE MAKE NO EXPRESS WARRANTIES AND
+                    HEREBY DISCLAIM ALL IMPLIED WARRANTIES REGARDING THE SITE AND ANY PART OF IT (INCLUDING, WITHOUT
+                    LIMITATION, THE SITE, ANY SMART CONTRACT, OR ANY EXTERNAL WEBSITES), INCLUDING THE IMPLIED WARRANTIES OF
+                    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, CORRECTNESS, ACCURACY, OR
+                    RELIABILITY. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, WE, OUR SUBSIDIARIES, AFFILIATES, AND
+                    LICENSORS DO NOT REPRESENT OR WARRANT TO YOU THAT: (I) YOUR ACCESS TO OR USE OF THE SITE WILL MEET YOUR
+                    REQUIREMENTS, (II) YOUR ACCESS TO OR USE OF THE SITE WILL BE UNINTERRUPTED, TIMELY, SECURE OR FREE FROM
+                    ERROR, (III) USAGE DATA PROVIDED THROUGH THE SITE WILL BE ACCURATE, (III) THE SITE OR ANY CONTENT,
+                    SERVICES, OR FEATURES MADE AVAILABLE ON OR THROUGH THE SITE ARE FREE OF VIRUSES OR OTHER HARMFUL
+                    COMPONENTS, OR (IV) THAT ANY DATA THAT YOU DISCLOSE WHEN YOU USE THE SITE WILL BE SECURE. SOME
+                    JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES IN CONTRACTS WITH CONSUMERS, SO SOME OR ALL
+                    OF THE ABOVE EXCLUSIONS MAY NOT APPLY TO YOU.<br>
+                    <br>
+                    B. YOU ACCEPT THE INHERENT SECURITY RISKS OF PROVIDING INFORMATION AND DEALING ONLINE OVER THE INTERNET,
+                    AND AGREE THAT WE HAVE NO LIABILITY OR RESPONSIBILITY FOR ANY BREACH OF SECURITY UNLESS IT IS DUE TO OUR
+                    WILLFULL MISCONDUCT.<br>
+                    <br>
+                    C. WE WILL NOT BE RESPONSIBLE OR LIABLE TO YOU FOR ANY LOSSES YOU INCUR AS THE RESULT OF YOUR USE OF THE
+                    ETHEREUM NETWORK NOR DO WE HAVE NO CONTROL OVER AND MAKE NO GUARANTEES REGARDING ANY SMART CONTRACTS.
+                </p>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <h2 style="font-family: 'Bitter', serif;" class="fw-bold fs-4">Limitation of Liability</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-8 col-lg-8 text-center m-lg-2">
+                <p style=" text-align: left;" class="fs-6 pt-3 pb-4 mb-2">
+                    A. YOU UNDERSTAND AND AGREE THAT WE WILL NOT BE LIABLE TO YOU OR TO ANY THIRD PARTY FOR ANY INDIRECT,
+                    INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES WHICH YOU MAY INCUR, HOWSOEVER CAUSED AND UNDER
+                    ANY THEORY OF LIABILITY, INCLUDING, WITHOUT LIMITATION, ANY LOSS OF PROFITS (WHETHER INCURRED DIRECTLY OR
+                    INDIRECTLY), LOSS OF GOODWILL OR BUSINESS REPUTATION, LOSS OF DATA, COST OF PROCUREMENT OF SUBSTITUTE
+                    GOODS OR SERVICES, OR ANY OTHER INTANGIBLE LOSS, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH
+                    DAMAGES.<br>
+                    <br>
+                    B. YOU AGREE THAT OUR TOTAL, AGGREGATE LIABILITY TO YOU FOR ANY AND ALL CLAIMS ARISING OUT OF OR RELATING
+                    TO THESE TERMS OR YOUR ACCESS TO OR USE OF (OR YOUR INABILITY TO ACCESS OR USE) ANY PORTION OF THE SITE,
+                    WHETHER IN CONTRACT, TORT, STRICT LIABILITY, OR ANY OTHER LEGAL THEORY, IS LIMITED TO THE GREATER OF (A)
+                    THE AMOUNTS YOU ACTUALLY PAID US UNDER THESE TERMS IN THE 12 MONTH PERIOD PRECEDING THE DATE THE CLAIM
+                    AROSE, OR (B) $500.<br>
+                    <br>
+                    C. YOU ACKNOWLEDGE AND AGREE THAT WE HAVE MADE THE SITE AVAILABLE TO YOU AND ENTERED INTO THESE TERMS IN
+                    RELIANCE UPON THE WARRANTY DISCLAIMERS AND LIMITATIONS OF LIABILITY SET FORTH HEREIN. WE WOULD NOT BE ABLE
+                    TO PROVIDE THE SITE TO YOU WITHOUT THESE LIMITATIONS.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <h2 style="font-family: 'Bitter', serif;" class="fw-bold fs-4">Risk Assumption</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-8 col-lg-8 text-center m-lg-2">
+                <p style=" text-align: left;" class="fs-5 pt-3 pb-4 mb-2">
+                    You accept and acknowledge each of the following:<br>
+                    <br>
+                    A. To the extent that you sell your Bullies Genesis NFT, please be aware that the prices of NFTs are
+                    extremely volatile and fluctuations in the prices of other NFTs and impact the price of your Bullies
+                    Genesis NFT both positively and negatively. Given the volatility, NFTs such as Bullies Genesis NFTs should
+                    not be considered an investment. You assume all risks in that connection.<br>
+                    <br>
+                    B. Ownership of a Bullies Genesis NFT confers ownership of digital artwork only. Accordingly, no
+                    information on this Site (or any other documents mentioned therein) is or may be considered to be advice
+                    or an invitation to enter into an agreement for any investment purpose. Further, nothing on this Site
+                    qualifies or is intended to be an offering of securities in any jurisdiction nor does it constitute an
+                    offer or an invitation to purchase shares, securities or other financial products. Due to the artistic
+                    nature of the project, Bullies Genesis has not been registered with or approved by any regulator in any
+                    jurisdiction. It remains your sole responsibility to assure that the purchase of the Bullies Genesis NFT
+                    and the associated art is in compliance with laws and regulations in your jurisdiction.<br>
+                    <br>
+                    C. You assume all risks associated with using an Internet-based currency, including, but not limited to,
+                    the risk of hardware, software and Internet connections, the risk of malicious software introduction, and
+                    the risk that third parties may obtain unauthorized access to information stored within your wallet.<br>
+                    <br>
+                    D. NFTs, cryptocurrencies and blockchain technology are relatively new and the regulatory landscape is
+                    unsettled. New regulations could negatively impact such technologies impacting the value for your Bullies
+                    Genesis NFT. You understand and accept all risk in that regard.<br>
+                    <br>
+                    E. You assume all responsibility for any adverse effects of disruptions or other issues impacting Ethereum
+                    or the Ethereum platform.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <h2 style="font-family: 'Bitter', serif;" class="fw-bold fs-4">Indemnification</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-8 col-lg-8 text-center m-lg-2">
+                <p style=" text-align: left;" class="fs-5 pt-3 pb-4 mb-2">
+                    You agree to hold harmless and indemnify Bullies Genesis and its subsidiaries, affiliates, officers,
+                    agents, employees, advertisers, licensors, suppliers or partners from and against any claim, liability,
+                    loss, damage (actual and consequential) of any kind or nature, suit, judgment, litigation cost, and
+                    reasonable attorneys' fees arising out of or in any way related to (i) your breach of these Terms, (ii)
+                    your misuse of the Site, or (iii) your violation of applicable laws, rules or regulations in connection
+                    with your access to or use of the Site.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <h2 style="font-family: 'Bitter', serif;" class="fw-bold fs-4">Changes to the Terms and Conditions</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-8 col-lg-8 text-center m-lg-2">
+                <p style=" text-align: left;" class="fs-5 pt-3 pb-4 mb-2">
+                    We may make changes to the Terms at our discretion. Please check these Terms periodically for changes. Any
+                    changes to the Terms will apply on the date that they are made, and your continued access to or use after
+                    the Terms have been updated will constitute your binding acceptance of the updates. If you do not agree to
+                    any revised Terms, you may not access or use the Site.
+                  </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <h2 style="font-family: 'Bitter', serif;" class="fw-bold fs-4">Children</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-8 col-lg-8 text-center m-lg-2">
+                <p style=" text-align: left;" class="fs-5 pt-3 pb-4 mb-2">
+                    Our Site is not intended for children. You must be at least 18 years old to access this Site or purchase a
+                    Bullies Genesis NFT. If you are under 18 years old you are not permitted to use this Site for any reason.
+                    By accessing the Site, you represent and warrant that you are at least 18 years of age.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <h2 style="font-family: 'Bitter', serif;" class="fw-bold fs-4 ">Dispute Resolution; Arbitration</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-8 col-lg-8 text-center m-lg-2">
+                <p style=" text-align: left;" class="fs-5 pt-3 pb-4 mb-2">
+                    All disputes arising out of or in connection with these Terms, including without limitation your access or
+                    use of the Site, or to any products sold or distributed through the Site, will be referred to and finally
+                    resolved by arbitration under the rules of the American Arbitration Association. The case will be
+                    adjudicated by a single arbitrator and will be administered by the American Arbitration Association in
+                    accordance with its applicable rules. Each party will cover its own fees and costs associated with the
+                    arbitration proceedings. The place of arbitration will be New York, New York. The award of the arbitrator
+                    will be final and binding, and any judgment on the award rendered by the arbitrator may be entered in any
+                    court of competent jurisdiction. Notwithstanding the foregoing, we may seek and obtain injunctive relief
+                    in any jurisdiction in any court of competent jurisdiction.<br>
+                    <br>
+                    <span class="fs-6">WITH RESPECT TO ANY DISPUTE ARISING OUT OF OR RELATED TO THESE TERMS, INCLUDING WITHOUT
+                      LIMITATION DISPUTES RELATED TO THE SITE OR ANY PRODUCTS SOLD OR DISTRIBUTED THROUGH THE SITE, OR THE
+                      SMART CONTRACTS: (I) YOU HEREBY EXPRESSLY GIVE UP YOUR RIGHT TO HAVE A TRIAL BY JURY; AND (II) YOU
+                      HEREBY EXPRESSLY GIVE UP YOUR RIGHT TO PARTICIPATE AS A MEMBER OF A CLASS OF CLAIMANTS IN ANY LAWSUIT,
+                      INCLUDING BUT NOT LIMITED TO CLASS ACTION LAWSUITS INVOLVING ANY SUCH DISPUTE.
+                    </span>
+                </p>
+            </div>
+        </div>
+        
     </div>
-    <div class="copyright ">
-      <small class="text-white-50 mt-5">&copy;2023 BULLIES GENESIS</small><br>
-      <span class="start text-white-50">An</span>
-      <strong class="text-decoration-none ">
-        <a class="text text-decoration-none mt-4 " href="https://opensea.io/collection/earlybirdscollective">Early Birds
-          Collective</a>
-      </strong>
-      <span class="end text-white-50">Curation</span>
-    </div>
-  </footer>
-  <!-- end footer-->
+    <!-- end landing-->
+
+    <!-- start footer-->
+    <footer class="pb-4 pt-5 text-decoration-none position-relative">
+        <div class="container  text-center pb-3">
+          <a class=" text-decoration-none ms-3 text-white-50" href="buybullies.html">Buy Bullies</a>
+          <a class=" text-decoration-none ms-3 text-white-50" href="roadmap.html">Roadmap</a>
+          <a class=" text-decoration-none ms-3 text-white-50" href="team.html">Team</a>
+          <a class=" text-decoration-none ms-3 text-white-50" href="utilities.html">Utilities</a>
+          <a class=" text-decoration-none ms-3 text-white-50" href="bones-mart.html">Bones Mart</a>
+          <a class=" text-decoration-none ms-3 text-white-50" href="dog_house.html">Dog House</a>
+          <a class=" text-decoration-none ms-3 text-white-50" href="boneschecker.html">Bones Checker</a>
+          <a class=" text-decoration-none ms-3 text-white-50" href="terms.html">Terms</a>
+          <a class=" text-decoration-none ms-3 text-white-50" href="purchase_history.html">Purchase History</a>
+        </div>
+        <div class="copyright text-center">
+          <small class="text-white-50 mt-5">&copy;2023 BULLIES GENESIS</small><br>
+          <span class="start text-white-50">An</span>
+          <strong class="text-decoration-none " >
+            <a class="text text-decoration-none mt-4 " style="color: #00d6b4;" href="https://opensea.io/collection/earlybirdscollective">Early Birds Collective</a>
+          </strong>
+          <span class="end text-white-50">Curation</span>
+        </div>
+      </footer>
+    <!-- end footer-->
 
 </body>
 

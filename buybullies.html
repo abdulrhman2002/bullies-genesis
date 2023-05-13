@@ -10,7 +10,7 @@
     content="Bullies Genesis is the first NFT collection curated by Early Birds Collective. 10,000 utility-packed 3D cartoon dogs coming to life on the Ethereum blockchain."
     name="description">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="buybullies.css">
+  <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,146 +21,149 @@
     type="image/x-icon">
 </head>
 
-<body class="text-white">
+<body style="min-height: 100vh; background-color:#100f10;">
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/all.min.js"></script>
 
-  <!-- start video-->
-  <video autoplay muted loop id="backgroundvideo">
-    <source src="videos/bullies_backyard_banner_ani_v01_grayfade_v03-transcode.mp4" type="video/mp4">
-  </video>
-  <!-- End video-->
+ <!-- start video-->
+  <video autoplay muted loop id="backgroundvideo" class=" position-fixed " style=" width: 100%; height: 100vh; object-fit:cover; opacity:0.3;">
+    <source src="videos/bullies_backyard_banner_ani_v01_grayfade_v03-transcode.mp4" type="video/mp4" >
+  </video> 
+ <!-- End video-->
 
   <!-- start navbar-->
-  <nav class="navbar navbar-expand-md ">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid mt-4 ms-3 mb-0">
 
       <a class="navbar-brand" href="index.html">
         <img class="logo" src="images/bullie_bone_spin_v01_alpha.gif" style="width: 75px;">
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler fs-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa-solid fa-bars"></i>
       </button>
 
       <div class="collapse navbar-collapse ul-bg" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" style="background-color: transparent; text-shadow: 1px 1px 3px #000; font-family:'Merriweather', serif; letter-spacing: 1px;">
 
-          <li class="nav-item">
-            <a class="nav-link" style="padding: 30px 10px;" href="buybullies.html">BUY BULLIES</a>
+          <li class="nav-item ">
+            <a class="nav-link d-inline-block fw-bold text-white position-relative"  style="padding: 30px 10px;font-size:15px;" href="buybullies.html">BUY BULLIES</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" style="padding: 30px 10px;" href="#">ROADMAP</a>
+            <a class="nav-link d-inline-block fw-bold text-white position-relative" style="padding: 30px 10px;font-size:15px;" href="roadmap.html" >ROADMAP</a>
+          </li>
+
+          <li class="nav-item" >
+            <a class="nav-link d-inline-block fw-bold text-white position-relative" style="padding: 30px 10px;font-size: 15px;" href="team.html" >TEAM</a>
+          </li>
+
+          <li class="nav-item" >
+            <a class="nav-link d-inline-block fw-bold text-white position-relative" style="padding: 30px 10px;font-size:15px;" href="utilities.html">UTILITIES</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" style="padding: 30px 10px;" href="team.html">TEAM</a>
+            <a class="nav-link d-inline-block fw-bold text-white position-relative" style="padding: 30px 10px;font-size:15px;" href="bones-mart.html" >$BONES MART</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" style="padding: 30px 10px;" href="utilities.html">UTILITIES</a>
+            <a class="nav-link d-inline-block fw-bold text-white position-relative" style="padding: 30px 10px;font-size: 15px;" href="dog_house.html" >DOG HOUSE</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" style="padding: 30px 10px;" href="#">$BONES MART</a>
+            <a class="nav-link d-inline-block fw-bold text-white position-relative" style="padding: 30px 10px;font-size: 15px;" href="boneschecker.html">BONES CHECKER</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" style="padding: 30px 10px;" href="#">DOG HOUSE</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" style="padding: 30px 10px;" href="#">BONES CHECKER</a>
+            <a class="nav-link d-inline-block fw-bold text-white position-relative" style="padding: 30px 10px;font-size: 15px;" href="purchase_history.html">PURCHASE HISTORY</a>
           </li>
 
         </ul>
 
         <div class="navbar-nav ms-auto">
           <div class="row">
-            <div class="d-flex">
+              <div class="d-flex">
 
 
-              <a class="text-reset m-auto me-auto" href="https://opensea.io/collection/bullies-genesis" target="_blank"
-                rel="noopener noreferrer" style="padding:20px 10px;">
-                <img style="width: 30px;" src="images/9255429_opensea_logo_icon.png">
-              </a>
+                  <a class="text-reset m-auto me-auto" href="https://opensea.io/collection/bullies-genesis"
+                      target="_blank" rel="noopener noreferrer" style="padding:20px 10px;">
+                      <img style="width: 30px;" src="images/9255429_opensea_logo_icon.png">
+                  </a>
 
-              <a class="text-reset m-auto me-auto" href="https://twitter.com/bulliesgenesis" target="_blank"
-                rel="noopener noreferrer" style="padding:20px 10px;">
-                <img style="width: 30px;" src="images/104501_twitter_bird_icon.png">
-              </a>
+                  <a class="text-reset m-auto me-auto" href="https://twitter.com/bulliesgenesis"
+                      target="_blank" rel="noopener noreferrer" style="padding:20px 10px;">
+                      <img style="width: 30px;" src="images/104501_twitter_bird_icon.png">
+                  </a>
 
-              <a class="text-reset m-auto me-auto " target="_blank" rel="noopener noreferrer"
-                href="https://discord.com/invite/bullies" style="padding:20px 10px;">
-                <img style="width: 30px;" src="images/8546766_discord_icon.png">
-              </a>
+                  <a class="text-reset m-auto me-auto " target="_blank" rel="noopener noreferrer"
+                      href="https://discord.com/invite/bullies" style="padding:20px 10px;">
+                      <img style="width: 30px;" src="images/8546766_discord_icon.png">
+                  </a>
 
-              <a class="text-reset m-auto me-auto" target="_blank" rel="noopener noreferrer"
-                href="https://etherscan.io/address/0x19369905226f2d37562370a05a711c1de4c9593c"
-                style="padding:20px 10px;">
-                <img style="width: 30px;" src="images/etherscan-logo.png">
-              </a>
+                  <a class="text-reset m-auto me-auto" target="_blank" rel="noopener noreferrer"
+                      href="https://etherscan.io/address/0x19369905226f2d37562370a05a711c1de4c9593c" style="padding:20px 10px;">
+                      <img style="width: 30px;" src="images/etherscan-logo.png">
+                  </a>
 
-            </div>
+              </div>
           </div>
 
-        </div>
-
+      </div>
+           
       </div>
     </div>
   </nav>
-  <!-- End navbar-->
+ <!-- End navbar-->
+
 
   <!-- start landing-->
-  <div class="landing">
+  <div class="landing pt-5 m-3">
     <div class="row justify-content-center">
       <div class="col text-center">
-        <h3 class="mt-4 mb-5 fontBitter">BUY BULLIES</h3>
-        <img class="rounded-circle mb-3" style="height: 295px;" src="images/mint.jpg"><br>
+        <h3 class="mt-2 mb-5 text-white fst-italic fw-bolder fs-2" style="font-family: 'Bitter', serif;">BUY BULLIES</h3>
+        <img class="rounded-circle mb-3" style="width: 295px;" src="images/mint.jpg"><br>
       </div>
     </div>
 
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-8 col-lg-4 text-center m-lg-2">
-        <p id="first">Buy Bullies to join our community and earn $BONES tokens!</p>
-        <p id="second">Bullies are an ERC-721 token and cost .06 eth each.
+    <div class="row justify-content-center" >
+      <div class="col-10 col-md-8 col-lg-4 text-center ">
+        <p class="fs-3 text-white fw-bold" style="font-family:'Bitter', serif;">Buy Bullies to join our community and earn $BONES tokens!</p>
+        <p class="text-white lh-1 pb-5 pt-2" style="font-size: 19px; font-family: 'Droid sans',sans-serif; text-align:left;">Bullies are an ERC-721 token and cost .06 eth each.
           Bullies passively generate 4 $BONES per day by being delisted from secondary markets. This will reward those
           who mint right away with the most possible $BONES to use within our holder marketplace, Bones Mart.
         </p>
       </div>
     </div>
-    <div id="connect-button" class="m-auto" style="width: 161px;">
-      <a onclick="connect();" target="_blank" class="claim-bones-button w-button" href="">Connect</a>
+    <div class="connect-button m-auto pt-2 pe-3 pb-2 ps-3 mb-5 text-center text-white" style="width: 161px;">
+      <a  target="_blank" class="btn rounded-pill text-white w-button fs-6" style="cursor: pointer;" href="">Connect</a>
     </div>
-    <div class="div-block-5"></div>
+    
   </div>
   <!-- end landing-->
 
   <!-- start footer-->
-  <footer>
-    <div class="container text-light text-center">
-      <a class=" text-decoration-none ms-3 " href="buybullies.html">Buy Bullies</a>
-      <a class=" text-decoration-none ms-3 " href="#">Roadmap</a>
-      <a class=" text-decoration-none ms-3 " href="team.html">Team</a>
-      <a class=" text-decoration-none ms-3 " href="utilities.html">Utilities</a>
-      <a class=" text-decoration-none ms-3 " href="#">Bones Mart</a>
-      <a class=" text-decoration-none ms-3 " href="#">Dog House</a>
-      <a class=" text-decoration-none ms-3 " href="#">Bones Checker</a>
-      <a class=" text-decoration-none ms-3 " href="#">Terms</a><br>
+  <footer class="pb-4 pt-5 text-decoration-none position-relative">
+    <div class="container  text-center pb-3">
+      <a class=" text-decoration-none ms-3 text-white-50" href="buybullies.html">Buy Bullies</a>
+      <a class=" text-decoration-none ms-3 text-white-50" href="roadmap.html">Roadmap</a>
+      <a class=" text-decoration-none ms-3 text-white-50" href="team.html">Team</a>
+      <a class=" text-decoration-none ms-3 text-white-50" href="utilities.html">Utilities</a>
+      <a class=" text-decoration-none ms-3 text-white-50" href="bones-mart.html">Bones Mart</a>
+      <a class=" text-decoration-none ms-3 text-white-50" href="dog_house.html">Dog House</a>
+      <a class=" text-decoration-none ms-3 text-white-50" href="boneschecker.html">Bones Checker</a>
+      <a class=" text-decoration-none ms-3 text-white-50" href="terms.html">Terms</a>
+      <a class=" text-decoration-none ms-3 text-white-50" href="purchase_history.html">Purchase History</a>
     </div>
-    <div class="copyright ">
+    <div class="copyright text-center">
       <small class="text-white-50 mt-5">&copy;2023 BULLIES GENESIS</small><br>
       <span class="start text-white-50">An</span>
-      <strong class="text-decoration-none ">
-        <a class="text text-decoration-none mt-4 " href="https://opensea.io/collection/earlybirdscollective">Early Birds
-          Collective</a>
+      <strong class="text-decoration-none " >
+        <a class="text text-decoration-none mt-4 " style="color: #00d6b4;" href="https://opensea.io/collection/earlybirdscollective">Early Birds Collective</a>
       </strong>
       <span class="end text-white-50">Curation</span>
     </div>
   </footer>
-  <!-- end footer-->
+ <!-- end footer-->
 
 </body>
 

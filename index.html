@@ -14,57 +14,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&family=Changa+One:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link href="https://www.bulliesgenesis.com/images/bullie_bone_spin_v01_alpha.gif" rel="shortcut icon" type="image/x-icon">
 </head>
-<body>
+<body style="min-height: 100vh; background-color:#100f10;">
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/all.min.js"></script>
 
-<!-- start video-->
-  <video autoplay muted loop id="backgroundvideo">
+ <!-- start video-->
+  <video autoplay muted loop id="backgroundvideo" class=" position-fixed" style=" width: 100%; height: 100vh; object-fit:cover;">
     <source src="videos/bullies_backyard_banner_ani_v01_grayfade_v03-transcode.mp4" type="video/mp4" >
   </video> 
-<!-- End video-->
+ <!-- End video-->
 
-<!-- start navbar-->
-  <nav class="navbar navbar-expand-md ">
-    <div class="container-fluid">
+ <!-- start navbar-->
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid mt-4 ms-3 mb-0">
 
       <a class="navbar-brand" href="index.html">
         <img class="logo" src="images/bullie_bone_spin_v01_alpha.gif" style="width: 75px;">
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler fs-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa-solid fa-bars"></i>
       </button>
 
       <div class="collapse navbar-collapse ul-bg" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" style="background-color: transparent; text-shadow: 1px 1px 3px #000; font-family:'Merriweather', serif; letter-spacing: 1px;">
 
-          <li class="nav-item">
-            <a class="nav-link"  style="padding: 30px 10px;" href="buybullies.html">BUY BULLIES</a>
+          <li class="nav-item ">
+            <a class="nav-link d-inline-block fw-bold text-white position-relative"  style="padding: 30px 10px;font-size:15px;" href="buybullies.html">BUY BULLIES</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" style="padding: 30px 10px;" href="#" >ROADMAP</a>
+            <a class="nav-link d-inline-block fw-bold text-white position-relative" style="padding: 30px 10px;font-size:15px;" href="roadmap.html" >ROADMAP</a>
           </li>
 
           <li class="nav-item" >
-            <a class="nav-link" style="padding: 30px 10px;" href="team.html" >TEAM</a>
+            <a class="nav-link d-inline-block fw-bold text-white position-relative" style="padding: 30px 10px;font-size: 15px;" href="team.html" >TEAM</a>
           </li>
 
           <li class="nav-item" >
-            <a class="nav-link" style="padding: 30px 10px;" href="utilities.html">UTILITIES</a>
+            <a class="nav-link d-inline-block fw-bold text-white position-relative" style="padding: 30px 10px;font-size:15px;" href="utilities.html">UTILITIES</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" style="padding: 30px 10px;" href="#" >$BONES MART</a>
+            <a class="nav-link d-inline-block fw-bold text-white position-relative" style="padding: 30px 10px;font-size:15px;" href="bones-mart.html" >$BONES MART</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" style="padding: 30px 10px;" href="#" >DOG HOUSE</a>
+            <a class="nav-link d-inline-block fw-bold text-white position-relative" style="padding: 30px 10px;font-size: 15px;" href="dog_house.html" >DOG HOUSE</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" style="padding: 30px 10px;" href="#">BONES CHECKER</a>
+            <a class="nav-link d-inline-block fw-bold text-white position-relative" style="padding: 30px 10px;font-size: 15px;" href="boneschecker.html">BONES CHECKER</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link d-inline-block fw-bold text-white position-relative" style="padding: 30px 10px;font-size: 15px;" href="purchase_history.html">PURCHASE HISTORY</a>
           </li>
 
         </ul>
@@ -102,40 +106,41 @@
       </div>
     </div>
   </nav>
-<!-- End navbar-->
+ <!-- End navbar-->
 
-<!-- start landing-->
-  <div class="landing">
-    <div class="text-center fw-bolder ">
-      <p style="margin-bottom:1.25rem;">Supply:       8,888 Bullies</p>
-      <p style="margin-bottom:2rem;">Price:       .06 ETH</p>
-      <a class="btn rounded-pill main-btn fs-5" href="">Buy Bullies!</a>
+ <!-- start landing-->
+  <div class="landing" style=" margin: 375px 140.8px 230px; padding: 45px 34px 45px 40px;">
+    <div class="text-center fw-bold text-white">
+      <p class="mb-2 fs-4">Supply:8,888 Bullies</p>
+      <p class="mb-4 fs-4">Price:.06 ETH</p>
+      <a class="btn rounded-pill main-btn fs-5 lh-lg fw-bold pt-2 pe-5 ps-5 pb-2 text-white" href="buybullies.html">Buy Bullies!</a>
     </div>
   </div>
-<!-- end landing-->
+ <!-- end landing-->
 
-<!-- start footer-->
-  <footer>
-    <div class="container text-light text-center">
-      <a class=" text-decoration-none ms-3 " href="buybullies.html">Buy Bullies</a>
-      <a class=" text-decoration-none ms-3 " href="#">Roadmap</a>
-      <a class=" text-decoration-none ms-3 " href="team.html">Team</a>
-      <a class=" text-decoration-none ms-3 " href="utilities.html">Utilities</a>
-      <a class=" text-decoration-none ms-3 " href="#">Bones Mart</a>
-      <a class=" text-decoration-none ms-3 " href="#">Dog House</a>
-      <a class=" text-decoration-none ms-3 " href="#">Bones Checker</a>
-      <a class=" text-decoration-none ms-3 " href="#">Terms</a><br>
+ <!-- start footer-->
+  <footer class="pb-4 pt-1 text-decoration-none position-relative">
+    <div class="container  text-center pb-3">
+      <a class=" text-decoration-none ms-3 text-white-50" href="buybullies.html">Buy Bullies</a>
+      <a class=" text-decoration-none ms-3 text-white-50" href="roadmap.html">Roadmap</a>
+      <a class=" text-decoration-none ms-3 text-white-50" href="team.html">Team</a>
+      <a class=" text-decoration-none ms-3 text-white-50" href="utilities.html">Utilities</a>
+      <a class=" text-decoration-none ms-3 text-white-50" href="bones-mart.html ">Bones Mart</a>
+      <a class=" text-decoration-none ms-3 text-white-50" href="dog_house.html">Dog House</a>
+      <a class=" text-decoration-none ms-3 text-white-50" href="boneschecker.html">Bones Checker</a>
+      <a class=" text-decoration-none ms-3 text-white-50" href="terms.html">Terms</a>
+      <a class=" text-decoration-none ms-3 text-white-50" href="purchase_history.html">Purchase History</a>
     </div>
-    <div class="copyright ">
+    <div class="copyright text-center">
       <small class="text-white-50 mt-5">&copy;2023 BULLIES GENESIS</small><br>
       <span class="start text-white-50">An</span>
-      <strong class="text-decoration-none ">
-        <a class="text text-decoration-none mt-4 " href="https://opensea.io/collection/earlybirdscollective">Early Birds Collective</a>
+      <strong class="text-decoration-none " >
+        <a class="text text-decoration-none mt-4 " style="color: #00d6b4;" href="https://opensea.io/collection/earlybirdscollective">Early Birds Collective</a>
       </strong>
       <span class="end text-white-50">Curation</span>
     </div>
   </footer>
-<!-- end footer-->
+ <!-- end footer-->
 
 </body>
 </html>

@@ -10,7 +10,7 @@
         content="Bullies Genesis is the first NFT collection curated by Early Birds Collective. 10,000 utility-packed 3D cartoon dogs coming to life on the Ethereum blockchain."
         name="description">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="team.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,58 +21,81 @@
         type="image/x-icon">
 </head>
 
-<body class="text-white">
+<body style="min-height: 100vh; background-color:#100f10;">
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
 
     <!-- start video-->
-    <video autoplay muted loop id="backgroundvideo">
+    <video autoplay muted loop id="backgroundvideo" class=" position-fixed "
+        style=" width: 100%; height: 100vh; object-fit:cover; opacity:0.3;">
         <source src="videos/bullies_backyard_banner_ani_v01_grayfade_v03-transcode.mp4" type="video/mp4">
     </video>
     <!-- End video-->
 
     <!-- start navbar-->
-    <nav class="navbar navbar-expand-md ">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid mt-4 ms-3 mb-0">
 
             <a class="navbar-brand" href="index.html">
                 <img class="logo" src="images/bullie_bone_spin_v01_alpha.gif" style="width: 75px;">
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler fs-3 text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
             <div class="collapse navbar-collapse ul-bg" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav"
+                    style="background-color: transparent; text-shadow: 1px 1px 3px #000; font-family:'Merriweather', serif; letter-spacing: 1px;">
 
-                    <li class="nav-item">
-                        <a class="nav-link" style="padding: 30px 10px;" href="buybullies.html">BUY BULLIES</a>
+                    <li class="nav-item ">
+                        <a class="nav-link d-inline-block fw-bold text-white position-relative"
+                            style="padding: 30px 10px;font-size:15px;" href="buybullies.html">BUY BULLIES
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" style="padding: 30px 10px;" href="#">ROADMAP</a>
+                        <a class="nav-link d-inline-block fw-bold text-white position-relative"
+                            style="padding: 30px 10px;font-size:15px;" href="roadmap.html">ROADMAP
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" style="padding: 30px 10px;" href="team.html">TEAM</a>
+                        <a class="nav-link d-inline-block fw-bold text-white position-relative"
+                            style="padding: 30px 10px;font-size: 15px;" href="team.html">TEAM
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" style="padding: 30px 10px;" href="utilities.html">UTILITIES</a>
+                        <a class="nav-link d-inline-block fw-bold text-white position-relative"
+                            style="padding: 30px 10px;font-size:15px;" href="utilities.html">UTILITIES
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" style="padding: 30px 10px;" href="#">$BONES MART</a>
+                        <a class="nav-link d-inline-block fw-bold text-white position-relative"
+                            style="padding: 30px 10px;font-size:15px;" href="bones-mart.html">$BONES MART
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" style="padding: 30px 10px;" href="#">DOG HOUSE</a>
+                        <a class="nav-link d-inline-block fw-bold text-white position-relative"
+                            style="padding: 30px 10px;font-size: 15px;" href="dog_house.html">DOG HOUSE
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" style="padding: 30px 10px;" href="#">BONES CHECKER</a>
+                        <a class="nav-link d-inline-block fw-bold text-white position-relative"
+                            style="padding: 30px 10px;font-size: 15px;" href="boneschecker.html">BONES CHECKER
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link d-inline-block fw-bold text-white position-relative"
+                            style="padding: 30px 10px;font-size: 13px;" href="purchase_history.html">PURCHASE HISTORY
+                        </a>
                     </li>
 
                 </ul>
@@ -114,22 +137,22 @@
     <!-- End navbar-->
 
     <!-- start landing-->
-    <div class="landing">
+    <div class="landing pt-3 me-3 text-white">
 
         <div class="row justify-content-center">
             <div class="col text-center">
-                <h3 class="mt-4 mb-5 fontBitter">TEAM</h3>
+                <h3 class="mt-4 mb-5 fst-italic fs-2 fw-bold" style="font-family: 'Bitter', serif;">TEAM</h3>
                 <img class="rounded-circle mb-4" style="height: 295px;" src="images/Heisenbully-p-1080.png"><br>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-12 col-md-8 col-lg-5 text-center m-lg-2">
-                <p id="first">Chris Maffei</p>
-                <p class="fst-italic" id="position">Bullies Genesis CEO/Founder</p>
+            <div class="col-10 col-md-8 col-lg-5 text-center m-lg-2">
+                <p class="fs-3 fw-bold" style="font-family:'Bitter', serif;">Chris Maffei</p>
+                <p class="fst-italic fs-5" style="font-family:'Bitter',serif;">Bullies Genesis CEO/Founder</p>
                 <a href="https://twitter.com/ebgnft">
                     <img class="mb-5" src="images/104501_twitter_bird_icon.png" style="width: 30px;">
                 </a><br>
-                <p class="team-text-white pt-3 pb-4 lh-sm mb-5">
+                <p class=" pt-2 pb-4 lh-sm mb-5 fs-5" style="font-family: 'Droid sans',sans-serif; text-align: left;">
                     Chris Maffei is the CEO and Founder of NFT collections
                     <a class=" text text-decoration-none" href="https://opensea.io/collection/earlybirdsgenesis"
                         style="color: #00d6b4;">
@@ -154,13 +177,13 @@
                     <img class="rounded-circle mb-4" style="height: 295px;" src="images/bullie_RICH_v02-p-1080.jpg"><br>
                 </div>
             </div>
-            <div class="col-12 col-md-8 col-lg-5 text-center m-lg-2">
-                <p id="first">Blake Walker</p>
-                <p class="fst-italic" id="position">Bullies Genesis CMO/Founder</p>
+            <div class="col-10 col-md-8 col-lg-5 text-center m-lg-2">
+                <p class="fs-3 fw-bold" style="font-family:'Bitter', serif;">Blake Walker</p>
+                <p class="fst-italic fs-5" style="font-family:'Bitter',serif;">Bullies Genesis CMO/Founder</p>
                 <a href="https://twitter.com/JustCallMeCash">
                     <img class="mb-5" src="images/104501_twitter_bird_icon.png" style="width: 30px;">
                 </a><br>
-                <p class="team-text-white pt-3 pb-4 lh-sm mb-5">
+                <p class=" pt-2 pb-4 lh-sm mb-5 fs-5" style="font-family: 'Droid sans',sans-serif; text-align: left;">
                     Blake Walker is a serial entrepreneur, who has owned and operated multiple businesses in the
                     entertainment, retail, and online spaces. After his introduction to Web3, he has quickly
                     transitioned from collector to community manager, and now first time founder.<br>
@@ -178,14 +201,15 @@
                         src="images/bullie_ANUBIS_v02_0004_-p-800.jpg"><br>
                 </div>
             </div>
-            <div class="col-12 col-md-8 col-lg-5 text-center m-lg-2">
-                <p id="first">Mikey Guggenheim</p>
-                <p class="fst-italic" id="position">Bullies Genesis Art Director & Technical Artist</p>
+            <div class="col-10 col-md-8 col-lg-5 text-center m-lg-2">
+                <p class="fs-3 fw-bold" style="font-family:'Bitter', serif;">Mikey Guggenheim</p>
+                <p class="fst-italic fs-5" style="font-family:'Bitter',serif;">Bullies Genesis Art Director & Technical
+                    Artist</p>
                 <a href="https://twitter.com/mikeyguggenheim">
                     <img class="mb-5" src="images/104501_twitter_bird_icon.png" style="width: 30px;">
                 </a><br>
-                
-                <p class="team-text-white pt-3 pb-4 lh-sm mb-5">
+
+                <p class=" pt-2 pb-4 lh-sm mb-5 fs-5" style="font-family: 'Droid sans',sans-serif; text-align: left;">
                     Mikey Guggenheim is an animator, filmmaker, and NFT artist based in Los Angeles, CA.
                     <a class=" text text-decoration-none fst-italic"
                         href="https://opensea.io/collection/bullies-genesis" style="color: #00d6b4;">
@@ -211,25 +235,29 @@
 
             <div class="row justify-content-center">
                 <div class="col text-center">
-                    <img class="rounded-circle mb-4" style="height: 295px;"
-                        src="images/bullie_CLOWN_v02-p-1080.jpg"><br>
+                    <img class="rounded-circle mb-4" style="height: 295px;" src="images/bullie_CLOWN_v02-p-1080.jpg"><br>
                 </div>
             </div>
-            <div class="col-12 col-md-8 col-lg-5 text-center m-lg-2">
-                <p id="first">Dylan Vandenberg</p>
-                <p class="fst-italic" id="position">Bullies Genesis Artist</p>
+            <div class="col-10 col-md-8 col-lg-5 text-center m-lg-2">
+                <p class="fs-3 fw-bold" style="font-family:'Bitter', serif;">Dylan Vandenberg</p>
+                <p class="fst-italic fs-5" style="font-family:'Bitter',serif;">Bullies Genesis Artist</p>
                 <a href="https://www.vandivision.com/">
                     <img class="mb-3" src="images/language.png" style="width: 27.46px;">
                 </a><br>
-                
-                <p class="team-text-white pt-3 pb-4 lh-sm mb-5">
+
+                <p class=" pt-4 pb-4 lh-sm mb-5 fs-5" style="font-family: 'Droid sans',sans-serif; text-align: left;">
                     Dylan Vandenberg is a writer, director, animator, and NFT Artist.<br>
                     <br>
-                    He has worked on numerous TV, film, and music video projects with Adult Swim, A24, Cartoon Network, Comedy Central, Eric Andre, Flying Lotus, FX, HBO, Netflix, Nickelodeon, and Steve Aoki.  He has also worked with a litany of commercial clients including Adidas, Beats by Dre, Corvette, Facebook, Old Spice, McDonalds, Nike, and Riot Games.<br>
+                    He has worked on numerous TV, film, and music video projects with Adult Swim, A24, Cartoon Network,
+                    Comedy Central, Eric Andre, Flying Lotus, FX, HBO, Netflix, Nickelodeon, and Steve Aoki. He has also
+                    worked with a litany of commercial clients including Adidas, Beats by Dre, Corvette, Facebook, Old
+                    Spice, McDonalds, Nike, and Riot Games.<br>
                     <br>
-                    He is currently in development with 20th Century Studios for a half-hour animated comedy, titled In The Red and adapting the graphic novel Shmobots for television with Boom! Studios.<br>
+                    He is currently in development with 20th Century Studios for a half-hour animated comedy, titled In
+                    The Red and adapting the graphic novel Shmobots for television with Boom! Studios.<br>
                     <br>
-                    He resides in Los Angeles with his Pitbull, Remi, who has been both an inspiration and trusted company during the course of this project.<br>
+                    He resides in Los Angeles with his Pitbull, Remi, who has been both an inspiration and trusted
+                    company during the course of this project.<br>
                 </p>
             </div>
         </div>
@@ -237,28 +265,27 @@
     <!-- end landing-->
 
     <!-- start footer-->
-    <footer>
-            <div class="container text-light text-center">
-                <a class=" text-decoration-none ms-3 " href="buybullies.html">Buy Bullies</a>
-                <a class=" text-decoration-none ms-3 " href="#">Roadmap</a>
-                <a class=" text-decoration-none ms-3 " href="team.html">Team</a>
-                <a class=" text-decoration-none ms-3 " href="utilities.html">Utilities</a>
-                <a class=" text-decoration-none ms-3 " href="#">Bones Mart</a>
-                <a class=" text-decoration-none ms-3 " href="#">Dog House</a>
-                <a class=" text-decoration-none ms-3 " href="#">Bones Checker</a>
-                <a class=" text-decoration-none ms-3 " href="#">Terms</a><br>
-            </div>
-            <div class="copyright ">
-                <small class="text-white-50 mt-5">&copy;2023 BULLIES GENESIS</small><br>
-                <span class="start text-white-50">An</span>
-                <strong class="text-decoration-none ">
-                    <a class="text text-decoration-none mt-4 "
-                        href="https://opensea.io/collection/earlybirdscollective">Early Birds
-                        Collective</a>
-                </strong>
-                <span class="end text-white-50">Curation</span>
-            </div>
-    </footer>
+    <footer class="pb-4 pt-5 text-decoration-none position-relative">
+        <div class="container  text-center pb-3">
+          <a class=" text-decoration-none ms-3 text-white-50" href="buybullies.html">Buy Bullies</a>
+          <a class=" text-decoration-none ms-3 text-white-50" href="roadmap.html">Roadmap</a>
+          <a class=" text-decoration-none ms-3 text-white-50" href="team.html">Team</a>
+          <a class=" text-decoration-none ms-3 text-white-50" href="utilities.html">Utilities</a>
+          <a class=" text-decoration-none ms-3 text-white-50" href="bones-mart.html">Bones Mart</a>
+          <a class=" text-decoration-none ms-3 text-white-50" href="dog_house.html">Dog House</a>
+          <a class=" text-decoration-none ms-3 text-white-50" href="boneschecker.html">Bones Checker</a>
+          <a class=" text-decoration-none ms-3 text-white-50" href="terms.html">Terms</a>
+          <a class=" text-decoration-none ms-3 text-white-50" href="purchase_history.html">Purchase History</a>
+        </div>
+        <div class="copyright text-center">
+          <small class="text-white-50 mt-5">&copy;2023 BULLIES GENESIS</small><br>
+          <span class="start text-white-50">An</span>
+          <strong class="text-decoration-none " >
+            <a class="text text-decoration-none mt-4 " style="color: #00d6b4;" href="https://opensea.io/collection/earlybirdscollective">Early Birds Collective</a>
+          </strong>
+          <span class="end text-white-50">Curation</span>
+        </div>
+      </footer>
     <!-- end footer-->
 
 </body>
